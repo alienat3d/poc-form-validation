@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Simple form template</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <form class="my-form">
+      <label for="username">Логин:</label>
+      <input id="username"
+        class="username"
+        type="text"
+        name="username"
+        minlength="3"
+        maxlength="20"
+        required>
+      <label for="password">Пароль:</label>
+      <input id="password"
+        class="password"
+        type="password"
+        name="password"
+        minlength="8"
+        maxlength="20"
+        required>
+      <label for="confirmPassword">Повторите пароль:</label>
+      <input id="confirmPassword"
+        class="confirm-password"
+        type="password"
+        name="confirmPassword"
+        minlength="8"
+        maxlength="20"
+        required>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
