@@ -6,7 +6,8 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
   <title>Simple form template</title>
-  <link href="style.css" rel="stylesheet">
+  <link href="style.css"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -19,6 +20,14 @@
         name="username"
         minlength="3"
         maxlength="20"
+        required>
+      <label for="email">E-Mail:</label>
+      <input id="email"
+        class="email"
+        type="text"
+        name="email"
+        minlength="6"
+        maxlength="30"
         required>
       <label for="password">Пароль:</label>
       <input id="password"
@@ -35,6 +44,14 @@
         name="confirmPassword"
         minlength="8"
         maxlength="20"
+        required>
+      <label for="phone">Телефон:</label>
+      <input id="phone"
+        class="phone"
+        type="text"
+        name="phone"
+        minlength="11"
+        maxlength="15"
         required>
       <button type="submit">Отправить</button>
     </form>
